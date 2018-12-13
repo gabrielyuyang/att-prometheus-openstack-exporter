@@ -52,7 +52,7 @@ check sample env file provided in the source.
 docker run --name bottlenecks-openstack-exporter \
   -v /tmp:/tmp \
   -p 9104:9104 --env-file sample_env_file \
-  -it gabrielyuyang/att-prometheus-openstack-exporter:latest
+  -it gabrielyuyang/openstack-exporter:latest
 
 ## sample test
 docker exec \<instance-id\> curl http://localhost:9104/metrics
